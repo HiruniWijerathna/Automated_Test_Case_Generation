@@ -1,0 +1,60 @@
+# =========================
+# FRONTEND IGNORE PATTERNS
+# =========================
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/build/
+frontend/dist/
+frontend/coverage/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/*.log
+
+# =========================
+# BACKEND IGNORE PATTERNS
+# =========================
+backend/app/__pycache__/
+backend/__pycache__/
+backend/*.py[cod]
+backend/*.so
+backend/*.egg
+backend/*.egg-info/
+backend/venv/
+backend/.venv/
+backend/**/venv/
+backend/coverage/
+backend/htmlcov/
+backend/build/
+backend/dist/
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+backend/*.log
+backend/models/
+backend/**/models/
+
+# =========================
+# COMMON IGNORE PATTERNS
+# =========================
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+models/
+**/models/
+.vscode/
