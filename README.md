@@ -37,5 +37,5 @@ npm start
 - View or copy the generated test cases for use in your test suite.
 
 📸 Screenshots
-### Homepage
-<p align="center">   <img src="screenshot1.png"  width="50%" /> </p>   
+
+<img src="screenshot1.png"  width="50%" />  
