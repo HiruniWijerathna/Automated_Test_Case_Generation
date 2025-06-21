@@ -38,4 +38,4 @@ npm start
 
 📸 Screenshots
 ### Homepage
-![Homepage](screenshol/screenshot1.png)
+<p align="center">   <img src="screenshot1.png"  width="50%" /> </p>   
