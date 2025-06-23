@@ -3,6 +3,8 @@
 
 Automatically generate software test cases from requirements or source code using AI. This app is designed to simplify the testing process and improve efficiency in software development.
 
+---
+
 ## 🚀 Features
 
 - ✅ Generate test cases from raw requirements or code
@@ -12,26 +14,32 @@ Automatically generate software test cases from requirements or source code usin
 - 📊 Handles large inputs by intelligently chunking them
 - 💾 Downloads and reuses the model locally after the first use
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js
 - **Backend**: FastAPI (Python)
 - **AI Model**: Hugging Face transformer
 
-2. Setup Backend (FastAPI)
-cd server
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-uvicorn main:app --reload
+---
+
+## ⚙️ Setup Backend (FastAPI)
+- cd server
+- python -m venv venv
+- source venv/bin/activate  # or venv\Scripts\activate on Windows
+- pip install -r requirements.txt
+- uvicorn main:app --reload
 
 
-4. Setup Frontend (React)
-cd frontend
-npm install
-npm start
+## 🖥️ Setup Frontend (React)
+- cd frontend
+- npm install
+- npm start
 
-🔧 Usage
+---
+
+##🔧 Usage
 - Open the app in your browser.
 - Enter software requirements or code.
 - Click "Generate Test Cases."
