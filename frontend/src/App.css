@@ -2,22 +2,25 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e5e7eb;
-  transition: background-color 0.3s ease;
   font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8; /* changed from #eaedf1 */
+  transition: background-color 30s ease;
 }
 
 /* App Container */
 .App {
-  padding: 2.5rem;
-  max-width: 720px;
-  margin: 4rem auto;
-  background: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 700px;
+  margin: 5vh auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85); /* softened white glass */
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(3, 5, 20, 0.1);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s ease-in-out;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 /* Form Styling */
@@ -40,6 +43,12 @@ body {
   background-color: #fff;
   color: #111827;
   transition: all 0.3s ease;
+}
+
+.form-container textarea {
+  height: 100px;
+  resize: vertical;
+  width: 96%;
 }
 
 .form-container textarea:focus,
@@ -71,7 +80,7 @@ button:hover {
 /* Result Output */
 .result {
   margin-top: 2.5rem;
-  background: linear-gradient(135deg, #ffffff, #f3f4f6);
+  background: linear-gradient(135deg, #fdfdfd, #f3f4f6); /* softened */
   padding: 1.5rem 2rem;
   border-radius: 16px;
   border: 2px solid transparent;
@@ -81,9 +90,9 @@ button:hover {
   line-height: 1.6;
   color: #1f2937;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
   white-space: pre-wrap;
   overflow-x: auto;
+  transition: all 0.3s ease;
 }
 
 /* Glowing Gradient Border */
@@ -115,13 +124,13 @@ button:hover {
 /* DARK MODE SUPPORT */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #0f172a;
+    background-color: #0b1120; /* deeper blue-black */
   }
 
   .App {
-    background: rgba(30, 41, 59, 0.85);
+    background: rgba(23, 34, 54, 0.9); /* darkened glass */
     color: #e2e8f0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .form-container label {
@@ -142,9 +151,8 @@ button:hover {
   }
 
   .result {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
+    background: linear-gradient(135deg, #0f1828, #0d121e);
     color: #f1f5f9;
-    border: 2px solid transparent;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
@@ -158,15 +166,38 @@ button:hover {
   }
 
   .result::after {
-    content: "🌙";
+    content: "💡";
     color: #cbd5e1;
   }
 
   button {
-    background: linear-gradient(135deg, #818cf8, #60a5fa);
+    background: linear-gradient(135deg, #2134e3, #3d3df7);
   }
 
   button:hover {
-    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    background: linear-gradient(135deg, #2f8ae4, #3b82f6);
+  }
+}
+
+/* Responsive Fixes */
+@media (max-width: 480px) {
+  .App {
+    width: 95%;
+    padding: 1.25rem;
+    margin: 2vh auto;
+    max-height: 95vh;
+  }
+
+  .result {
+    font-size: 0.95rem;
+    padding: 1.25rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .form-container textarea {
+    height: 160px;
   }
 }
