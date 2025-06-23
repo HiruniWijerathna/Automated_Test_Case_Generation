@@ -1,4 +1,5 @@
-# Automated Test Case Generation App
+# 🤖 Automated Test Case Generation App 🧪✨
+<p align="center">   <img src="6.png" alt="ss" width="100%" /> </p>   
 
 Automatically generate software test cases from requirements or source code using AI. This app is designed to simplify the testing process and improve efficiency in software development.
 
@@ -36,6 +37,6 @@ npm start
 - Click "Generate Test Cases."
 - View or copy the generated test cases for use in your test suite.
 
-📸 Screenshots
 
-<img src="screenshot1.png"  width="50%" />  
+
+
